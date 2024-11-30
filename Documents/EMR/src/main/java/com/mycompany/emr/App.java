@@ -1,6 +1,7 @@
 package com.mycompany.emr;
 
 import com.mycompany.emr.controllers.SceneController;
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -10,6 +11,7 @@ import java.io.IOException;
 import java.net.URL;
 import utils.DatabaseConnection;
 import java.sql.Connection;
+
 
 /**
  * JavaFX App
@@ -86,3 +88,4 @@ public class App extends Application {
     }
 
 }
+

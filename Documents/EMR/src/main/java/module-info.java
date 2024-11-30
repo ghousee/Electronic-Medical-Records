@@ -5,5 +5,6 @@ module com.mycompany.emr {
     requires java.sql;
 
     opens com.mycompany.emr.controllers to javafx.fxml;
+
     exports com.mycompany.emr;
 }
