@@ -3,6 +3,8 @@ module com.mycompany.emr {
     requires javafx.fxml;
     requires java.base;
 
-    opens com.mycompany.emr to javafx.fxml;
+    requires java.sql;
+
+    opens com.mycompany.emr.controllers to javafx.fxml;
     exports com.mycompany.emr;
 }
