@@ -52,7 +52,7 @@
                   </HBox>
                   <HBox alignment="CENTER" prefHeight="67.0" prefWidth="376.0">
                      <children>
-                        <Button id="loginButton" fx:id="loginButton" mnemonicParsing="false" text="LOG IN">
+                        <Button id="loginButton" fx:id="loginButton" mnemonicParsing="false" onAction="#handleLogin" text="LOG IN">
                            <font>
                               <Font name="System Bold Italic" size="17.0" />
                            </font>

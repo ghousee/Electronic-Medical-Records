@@ -13,6 +13,7 @@ import java.sql.Connection;
 
 /**
  * JavaFX App
+ * @author Ghouse
  */
 public class App extends Application {
 
@@ -34,19 +35,6 @@ public class App extends Application {
     public static Connection getConnection() {
         return connection;
     }
-
-//    private static Parent loadFXML(String fxml) throws IOException {
-////        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource(fxml + ".fxml"));
-////        return fxmlLoader.load();
-//        String path = "" + fxml + ".fxml";
-//        URL resource = App.class.getResource(path);
-//        if (resource == null) {
-//            throw new IOException("FXML file not found at: " + path);
-//        }
-//        System.out.println("FXML file loaded from: " + resource.toString());
-//        FXMLLoader fxmlLoader = new FXMLLoader(resource);
-//        return fxmlLoader.load();
-//    }
 
     public static void main(String[] args) {
         launch();
