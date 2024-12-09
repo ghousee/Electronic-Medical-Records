@@ -6,6 +6,7 @@
 <?import javafx.scene.control.SplitMenuButton?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -23,6 +24,7 @@
       <TextArea fx:id="complaintsField" layoutX="26.0" layoutY="455.0" prefHeight="200.0" prefWidth="324.0" AnchorPane.bottomAnchor="24.0" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="660.0" AnchorPane.topAnchor="455.0" />
       <Label fx:id="bmiLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="204.0" layoutY="352.0" prefHeight="17.0" prefWidth="139.0" text="Results" textAlignment="CENTER" AnchorPane.bottomAnchor="310.0" AnchorPane.leftAnchor="204.0" AnchorPane.rightAnchor="667.0" AnchorPane.topAnchor="352.0" />
       <SplitMenuButton fx:id="bloodTypeMenu" layoutX="204.0" layoutY="311.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="139.0" text="Select Blood Type" AnchorPane.bottomAnchor="343.0" AnchorPane.leftAnchor="204.0" AnchorPane.rightAnchor="667.0" AnchorPane.topAnchor="311.0">
+
         <items>
           <MenuItem mnemonicParsing="false" text="O" />
             <MenuItem mnemonicParsing="false" text="O+" />
@@ -32,6 +34,7 @@
         </items>
       </SplitMenuButton>
       <Button fx:id="saveButton" layoutX="834.0" layoutY="616.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="139.0" text="SAVE" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="834.0" AnchorPane.rightAnchor="37.0" AnchorPane.topAnchor="616.0">
+
          <font>
             <Font name="System Bold" size="23.0" />
          </font>
@@ -68,5 +71,6 @@
             <TableColumn fx:id="complaintsColumn" prefWidth="69.0" text="Complaints" />
         </columns>
       </TableView>
+
    </children>
 </AnchorPane>

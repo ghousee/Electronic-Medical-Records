@@ -1,6 +1,7 @@
 package com.mycompany.emr;
 
 import com.mycompany.emr.controllers.SceneController;
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -48,3 +49,4 @@ public class App extends Application {
     }
 
 }
+

@@ -1,5 +1,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.mycompany</groupId>
     <artifactId>EMR</artifactId>
@@ -33,6 +34,7 @@
             <version>8.0.33</version> <!-- Use the latest version -->
         </dependency>
 
+
     </dependencies>
     <build>
         <plugins>
@@ -58,6 +60,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+
                 <version>3.8.0</version>
                 <configuration>
                     <release>11</release>
@@ -105,6 +108,7 @@
                                 <option>${profiler.jvmargs.arg3}</option>
                                 <option>${profiler.jvmargs.arg4}</option>
                                 <option>${profiler.jvmargs.arg5}</option>
+
                             </options>
                         </configuration>
                     </execution>

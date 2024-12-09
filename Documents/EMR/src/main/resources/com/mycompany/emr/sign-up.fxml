@@ -9,6 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="438.0" prefWidth="489.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.emr.controllers.SignUpController">
+
    <children>
       <Label layoutX="77.0" layoutY="162.0" text="Password" />
       <Label layoutX="77.0" layoutY="103.0" text="Username" />
@@ -18,5 +19,6 @@
       <Hyperlink fx:id="loginRedirect" layoutX="145.0" layoutY="373.0" onAction="#loginRedirect" text="Already have an Account. Sign in" />
       <PasswordField fx:id="passwordField" layoutX="201.0" layoutY="158.0" />
       <ComboBox fx:id="roleComboBox" layoutX="201.0" layoutY="223.0" prefWidth="150.0" />
+
    </children>
 </AnchorPane>
