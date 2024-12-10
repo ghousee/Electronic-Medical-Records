@@ -24,7 +24,7 @@ public class App extends Application {
     public void start(Stage stage) {
         try {
             SceneController.setPrimaryStage(stage);
-            SceneController.switchScene("patient-registration"); //Change Scenes
+            SceneController.switchScene("DoctorForm"); //Change Scenes
             stage.setTitle("EMR System");
             stage.show();
         } catch (Exception e) {
