@@ -4,7 +4,6 @@
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
-
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextArea?>
@@ -44,9 +43,9 @@
          <font>
             <Font name="System Bold" size="19.0" />
          </font></Label>
-      <Button fx:id="signOutButton" layoutX="643.0" layoutY="30.0" mnemonicParsing="false" onAction="#handleSignOut" prefHeight="25.0" prefWidth="112.0" text="Sign Out">
+      <Button fx:id="signOutButton" layoutX="653.0" layoutY="30.0" mnemonicParsing="false" onAction="#handleSignOut" prefHeight="34.0" prefWidth="110.0" text="Sign Out" textFill="#eb0000">
          <font>
-            <Font name="Roboto Black" size="20.0" />
+            <Font name="System Bold" size="14.0" />
          </font>
       </Button>
       <ListView fx:id="suggestionListView" layoutX="189.0" layoutY="103.0" prefHeight="50.0" prefWidth="149.0" />
