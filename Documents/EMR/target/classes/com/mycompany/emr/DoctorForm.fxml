@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="736.0" prefWidth="845.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.emr.controllers.DoctorFormController">
+
+   <children>
+      <Label layoutX="273.0" layoutY="30.0" text="Consultation Form">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="401.0" layoutY="407.0" text="Diagnostics">
+         <font>
+            <Font size="19.0" />
+         </font></Label>
+      <Text layoutX="36.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vitals">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Label layoutX="30.0" layoutY="561.0" text="Medications">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font></Label>
+      <Button fx:id="saveButton" layoutX="672.0" layoutY="658.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="104.0" text="Submit">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <TextField fx:id="searchField" layoutX="183.0" layoutY="100.0" />
+      <Label layoutX="36.0" layoutY="98.0" text="Search Patient:">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font></Label>
+      <Button fx:id="signOutButton" layoutX="653.0" layoutY="30.0" mnemonicParsing="false" onAction="#handleSignOut" prefHeight="34.0" prefWidth="110.0" text="Sign Out" textFill="#eb0000">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <ListView fx:id="suggestionListView" layoutX="345.0" layoutY="97.0" prefHeight="31.0" prefWidth="181.0" />
+      <ComboBox fx:id="medicationsComboBox" layoutX="170.0" layoutY="562.0" prefWidth="150.0" promptText="Select Medication" />
+      <TextArea fx:id="diagnosticsArea" layoutX="511.0" layoutY="407.0" prefHeight="123.0" prefWidth="265.0" promptText="Enter Patient Diagnostics" />
+      <TableView fx:id="vitalsTable" layoutX="35.0" layoutY="187.0" prefHeight="181.0" prefWidth="742.0">
+        <columns>
+          <TableColumn fx:id="vitalNameColumn" prefWidth="147.5" text="Patient Name" />
+          <TableColumn fx:id="vitalBloodTypeColumn" prefWidth="76.5" text="Blood Type" />
+            <TableColumn fx:id="vitalBloodPressureColumn" prefWidth="97.5" text="Blood Pressure" />
+            <TableColumn fx:id="vitalWeightColumn" text="Weight" />
+            <TableColumn fx:id="vitalHeightColumn" prefWidth="61.5" text="Height" />
+            <TableColumn fx:id="vitalBMIColumn" prefWidth="77.5" text="BMI" />
+            <TableColumn fx:id="vitalHeartRateColumn" prefWidth="71.5" text="Heart Rate" />
+            <TableColumn fx:id="vitalTemperatureColumn" prefWidth="103.0" text="Temperature" />
+        </columns>
+      </TableView>
+      <Label layoutX="37.0" layoutY="407.0" text="Complaints">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="complaintsLabel" layoutX="155.0" layoutY="407.0" prefHeight="123.0" prefWidth="236.0" text="Select Patient to see complaints recorded at Vitals" />
+      <Button fx:id="downloadPdfButton" layoutX="511.0" layoutY="671.0" mnemonicParsing="false" onAction="#downloadPDF" prefHeight="31.0" prefWidth="134.0" text="Download PDF" textFill="#4ae142">
+
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
