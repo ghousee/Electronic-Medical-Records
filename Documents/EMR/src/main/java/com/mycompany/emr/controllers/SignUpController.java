@@ -2,6 +2,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
+
+/**
+ *
+ * @author Ghouse
+ */
+
 package com.mycompany.emr.controllers;
 
 import com.mycompany.emr.App;
@@ -21,10 +27,6 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import utils.DatabaseConnection;
 
-/**
- *
- * @author mgmoh
- */
 public class SignUpController {
 
     @FXML
@@ -40,7 +42,7 @@ public class SignUpController {
 
     @FXML
     public void initialize() {
-        roleComboBox.getItems().addAll("Admin", "Registration Officer", "Nurse", "Doctor");
+        roleComboBox.getItems().addAll("Registration Officer", "Nurse", "Doctor");
     }
 
     @FXML
@@ -50,7 +52,7 @@ public class SignUpController {
     }
 
     @FXML
-    public void handleRegister() {
+    public void handleRegister() throws IOException {
         String username = usernameField.getText().trim();
         String password = passwordField.getText().trim();
         String role = roleComboBox.getValue();
@@ -69,6 +71,7 @@ public class SignUpController {
 
         if (userModel.registerUser(username, password, roleId)) {
             showAlert(AlertType.INFORMATION, "Success", "User registered successfully.");
+            SceneController.switchScene("homepage");
         } else {
             showAlert(AlertType.ERROR, "Registration Error", "Failed to register user.");
         }

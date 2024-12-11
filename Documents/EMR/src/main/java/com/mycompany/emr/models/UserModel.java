@@ -2,6 +2,10 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
+/**
+ *
+ * @author Ghouse
+ */
 package com.mycompany.emr.models;
 
 import java.sql.Connection;
@@ -13,10 +17,6 @@ import java.util.ArrayList;
 import java.util.List;
 import utils.DatabaseConnection;
 
-/**
- *
- * @author eboka
- */
 public class UserModel {
 
     private int id;
@@ -73,7 +73,7 @@ public class UserModel {
             System.err.println("Error fetching user ID: " + e.getMessage());
         }
 
-        return 0; // Return 0 if the user ID cannot be fetched
+        return 0; 
     }
 
     public boolean checkUserExists(String username) {
@@ -147,14 +147,11 @@ public class UserModel {
     public void deleteUser(int userId) {
         String deleteQuery = "DELETE FROM Users WHERE id = ?";
 
-        try (Connection connection = DatabaseConnection.getConnection(); PreparedStatement deleteStmt = connection.prepareStatement(deleteQuery)) {
-
-            // Step 1: Delete the user
+        try (Connection connection = DatabaseConnection.getConnection(); PreparedStatement deleteStmt = connection.prepareStatement(deleteQuery)) {            
             deleteStmt.setInt(1, userId);
             deleteStmt.executeUpdate();
             System.out.println("User deleted successfully.");
 
-            // Step 2: Reset User IDs
             resetUserIds();
         } catch (SQLException e) {
             System.err.println("Error deleting user: " + e.getMessage());
@@ -192,9 +189,9 @@ public class UserModel {
         String resetAutoIncrementQuery = "ALTER TABLE Users AUTO_INCREMENT = 1;";
 
         try (Connection connection = DatabaseConnection.getConnection(); Statement statement = connection.createStatement()) {
-            statement.execute("SET @row_number = 0;"); // Initialize row_number
-            statement.execute(resetIdsQuery); // Reorder IDs
-            statement.execute(resetAutoIncrementQuery); // Reset AUTO_INCREMENT
+            statement.execute("SET @row_number = 0;"); 
+            statement.execute(resetIdsQuery); 
+            statement.execute(resetAutoIncrementQuery); 
             System.out.println("User IDs reset successfully.");
         } catch (SQLException e) {
             System.err.println("Error resetting user IDs: " + e.getMessage());

@@ -8,7 +8,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 /**
  *
- * @author mgmoh
+ * @author ebokaren
  */
 //public class DatabaseConnection {
 //    private static final String URL = "jdbc:mysql://localhost:3306/EMR";
