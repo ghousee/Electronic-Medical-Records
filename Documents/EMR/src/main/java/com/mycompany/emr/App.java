@@ -34,7 +34,7 @@ public class App extends Application {
 
     public static Connection getConnection() {
         return connection;
-    }
+    };
 
 //    private static Parent loadFXML(String fxml) throws IOException {
 ////        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource(fxml + ".fxml"));
