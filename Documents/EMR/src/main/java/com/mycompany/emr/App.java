@@ -1,7 +1,10 @@
 package com.mycompany.emr;
 
+<<<<<<< HEAD
 import com.mycompany.emr.controllers.SceneController;
 
+=======
+>>>>>>> f43c1cb7dcbfb59f21bfb92452c9c1ab7922fd0a
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -16,6 +19,10 @@ import java.sql.Connection;
  * JavaFX App
  * @author Ghouse
  */
+/**
+ * 
+ * @author eboka
+ */
 public class App extends Application {
 
     private static Connection connection;
@@ -23,8 +30,11 @@ public class App extends Application {
     @Override
     public void start(Stage stage) {
         try {
+<<<<<<< HEAD
             SceneController.setPrimaryStage(stage);
             SceneController.switchScene("DoctorForm"); //Change Scenes
+=======
+>>>>>>> f43c1cb7dcbfb59f21bfb92452c9c1ab7922fd0a
             stage.setTitle("EMR System");
             stage.show();
         } catch (Exception e) {
@@ -35,7 +45,7 @@ public class App extends Application {
 
     public static Connection getConnection() {
         return connection;
-    }
+    };
 
     public static void main(String[] args) {
         launch();
@@ -49,4 +59,7 @@ public class App extends Application {
     }
 
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> f43c1cb7dcbfb59f21bfb92452c9c1ab7922fd0a

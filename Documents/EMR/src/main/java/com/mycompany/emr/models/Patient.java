@@ -2,12 +2,21 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
+<<<<<<< HEAD
 /**
  *
  * @author Ghouse
  */
 package com.mycompany.emr.models;
 
+=======
+package com.mycompany.emr.models;
+
+/**
+ *
+ * @author eboka
+ */
+>>>>>>> f43c1cb7dcbfb59f21bfb92452c9c1ab7922fd0a
 import java.time.LocalDate;
 
 public class Patient {

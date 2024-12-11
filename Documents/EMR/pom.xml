@@ -1,6 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<<<<<<< HEAD
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
+=======
+
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+>>>>>>> f43c1cb7dcbfb59f21bfb92452c9c1ab7922fd0a
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.mycompany</groupId>
     <artifactId>EMR</artifactId>
@@ -12,9 +17,16 @@
     </properties>
     <dependencies>
         <dependency>
+<<<<<<< HEAD
             <groupId>com.itextpdf</groupId>
             <artifactId>kernel</artifactId>
             <version>7.2.3</version>
+=======
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-controls</artifactId>
+
+            <version>22.0.1</version>
+>>>>>>> f43c1cb7dcbfb59f21bfb92452c9c1ab7922fd0a
         </dependency>
         <dependency>
             <groupId>com.itextpdf</groupId>
@@ -26,6 +38,10 @@
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-fxml</artifactId>
+<<<<<<< HEAD
+=======
+
+>>>>>>> f43c1cb7dcbfb59f21bfb92452c9c1ab7922fd0a
             <version>22.0.1</version>
         </dependency>
         <dependency>
@@ -34,7 +50,10 @@
             <version>8.0.33</version> <!-- Use the latest version -->
         </dependency>
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> f43c1cb7dcbfb59f21bfb92452c9c1ab7922fd0a
     </dependencies>
     <build>
         <plugins>
@@ -103,12 +122,19 @@
                         <id>ide-profile</id>
                         <configuration>
                             <options>
+<<<<<<< HEAD
+=======
+
+>>>>>>> f43c1cb7dcbfb59f21bfb92452c9c1ab7922fd0a
                                 <option>${profiler.jvmargs.arg1}</option>
                                 <option>${profiler.jvmargs.arg2}</option>
                                 <option>${profiler.jvmargs.arg3}</option>
                                 <option>${profiler.jvmargs.arg4}</option>
                                 <option>${profiler.jvmargs.arg5}</option>
+<<<<<<< HEAD
 
+=======
+>>>>>>> f43c1cb7dcbfb59f21bfb92452c9c1ab7922fd0a
                             </options>
                         </configuration>
                     </execution>

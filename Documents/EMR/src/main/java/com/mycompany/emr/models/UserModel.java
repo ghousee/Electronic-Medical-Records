@@ -17,6 +17,13 @@ import java.util.ArrayList;
 import java.util.List;
 import utils.DatabaseConnection;
 
+<<<<<<< HEAD
+=======
+/**
+ *
+ * @author eboka
+ */
+>>>>>>> f43c1cb7dcbfb59f21bfb92452c9c1ab7922fd0a
 public class UserModel {
 
     private int id;
@@ -73,7 +80,11 @@ public class UserModel {
             System.err.println("Error fetching user ID: " + e.getMessage());
         }
 
+<<<<<<< HEAD
         return 0; 
+=======
+        return 0; // Return 0 if the user ID cannot be fetched
+>>>>>>> f43c1cb7dcbfb59f21bfb92452c9c1ab7922fd0a
     }
 
     public boolean checkUserExists(String username) {
@@ -147,11 +158,21 @@ public class UserModel {
     public void deleteUser(int userId) {
         String deleteQuery = "DELETE FROM Users WHERE id = ?";
 
+<<<<<<< HEAD
         try (Connection connection = DatabaseConnection.getConnection(); PreparedStatement deleteStmt = connection.prepareStatement(deleteQuery)) {            
+=======
+        try (Connection connection = DatabaseConnection.getConnection(); PreparedStatement deleteStmt = connection.prepareStatement(deleteQuery)) {
+
+            // Step 1: Delete the user
+>>>>>>> f43c1cb7dcbfb59f21bfb92452c9c1ab7922fd0a
             deleteStmt.setInt(1, userId);
             deleteStmt.executeUpdate();
             System.out.println("User deleted successfully.");
 
+<<<<<<< HEAD
+=======
+            // Step 2: Reset User IDs
+>>>>>>> f43c1cb7dcbfb59f21bfb92452c9c1ab7922fd0a
             resetUserIds();
         } catch (SQLException e) {
             System.err.println("Error deleting user: " + e.getMessage());
@@ -189,9 +210,15 @@ public class UserModel {
         String resetAutoIncrementQuery = "ALTER TABLE Users AUTO_INCREMENT = 1;";
 
         try (Connection connection = DatabaseConnection.getConnection(); Statement statement = connection.createStatement()) {
+<<<<<<< HEAD
             statement.execute("SET @row_number = 0;"); 
             statement.execute(resetIdsQuery); 
             statement.execute(resetAutoIncrementQuery); 
+=======
+            statement.execute("SET @row_number = 0;"); // Initialize row_number
+            statement.execute(resetIdsQuery); // Reorder IDs
+            statement.execute(resetAutoIncrementQuery); // Reset AUTO_INCREMENT
+>>>>>>> f43c1cb7dcbfb59f21bfb92452c9c1ab7922fd0a
             System.out.println("User IDs reset successfully.");
         } catch (SQLException e) {
             System.err.println("Error resetting user IDs: " + e.getMessage());

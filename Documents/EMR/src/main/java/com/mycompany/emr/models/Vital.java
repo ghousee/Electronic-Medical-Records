@@ -2,12 +2,21 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
+<<<<<<< HEAD
 /**
  *
  * @author Ghouse
  */
 package com.mycompany.emr.models;
 
+=======
+package com.mycompany.emr.models;
+
+/**
+ *
+ * @author eboka
+ */
+>>>>>>> f43c1cb7dcbfb59f21bfb92452c9c1ab7922fd0a
 public class Vital {
 
     private int id;
@@ -21,6 +30,10 @@ public class Vital {
     private double bmi;
     private String complaints;
 
+<<<<<<< HEAD
+=======
+    // Constructor
+>>>>>>> f43c1cb7dcbfb59f21bfb92452c9c1ab7922fd0a
     public Vital(int id, String patientName, double weight, double height, String bloodType,
             String bloodPressure, int heartRate, double temperature, double bmi, String complaints) {
         this.id = id;
@@ -35,6 +48,10 @@ public class Vital {
         this.complaints = complaints;
     }
 
+<<<<<<< HEAD
+=======
+    // Getters and Setters
+>>>>>>> f43c1cb7dcbfb59f21bfb92452c9c1ab7922fd0a
     public int getId() {
         return id;
     }

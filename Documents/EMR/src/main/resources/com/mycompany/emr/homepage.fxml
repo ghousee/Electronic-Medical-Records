@@ -17,7 +17,10 @@
       <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: gold;" BorderPane.alignment="CENTER">
          <children>
             <Button id="signUpButton" fx:id="signUpButton" layoutX="100.0" layoutY="178.0" mnemonicParsing="false" onAction="#handleSignUp" text="Sign up">
+<<<<<<< HEAD
 
+=======
+>>>>>>> f43c1cb7dcbfb59f21bfb92452c9c1ab7922fd0a
                <font>
                   <Font name="System Bold" size="21.0" />
                </font>
@@ -39,7 +42,10 @@
                            </image>
                         </ImageView>
                         <TextField fx:id="usernameField" alignment="TOP_LEFT" prefHeight="37.0" prefWidth="177.0" />
+<<<<<<< HEAD
 
+=======
+>>>>>>> f43c1cb7dcbfb59f21bfb92452c9c1ab7922fd0a
                      </children>
                   </HBox>
                   <HBox alignment="CENTER" layoutX="10.0" layoutY="144.0" prefHeight="67.0" prefWidth="376.0" spacing="25.0">
@@ -50,13 +56,19 @@
                            </image>
                         </ImageView>
                         <PasswordField fx:id="passwordField" prefHeight="36.0" prefWidth="180.0" />
+<<<<<<< HEAD
 
+=======
+>>>>>>> f43c1cb7dcbfb59f21bfb92452c9c1ab7922fd0a
                      </children>
                   </HBox>
                   <HBox alignment="CENTER" prefHeight="67.0" prefWidth="376.0">
                      <children>
                         <Button id="loginButton" fx:id="loginButton" mnemonicParsing="false" onAction="#handleLogin" text="LOG IN">
+<<<<<<< HEAD
       
+=======
+>>>>>>> f43c1cb7dcbfb59f21bfb92452c9c1ab7922fd0a
                            <font>
                               <Font name="System Bold Italic" size="17.0" />
                            </font>
