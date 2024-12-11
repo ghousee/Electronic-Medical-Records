@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="parentPane" prefHeight="679.0" prefWidth="787.0" styleClass="AnchorPane" stylesheets="@vital_form.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.emr.controllers.VitalFormController">
+   <children>
+      <Label layoutX="37.0" layoutY="108.0" prefHeight="17.0" prefWidth="68.0" text="Weight" AnchorPane.bottomAnchor="554.0" AnchorPane.leftAnchor="37.0" AnchorPane.rightAnchor="682.0" AnchorPane.topAnchor="108.0" />
+      <Label layoutX="37.0" layoutY="153.0" prefHeight="17.0" prefWidth="45.0" text="Height" AnchorPane.bottomAnchor="509.0" AnchorPane.leftAnchor="37.0" AnchorPane.rightAnchor="682.0" AnchorPane.topAnchor="153.0" />
+      <Label layoutX="27.0" layoutY="345.0" text="Blood Type" AnchorPane.bottomAnchor="317.0" AnchorPane.leftAnchor="27.0" AnchorPane.rightAnchor="697.5" AnchorPane.topAnchor="345.0" />
+      <Label layoutX="27.0" layoutY="384.0" text="BMI" AnchorPane.bottomAnchor="278.0" AnchorPane.leftAnchor="27.0" AnchorPane.rightAnchor="697.5" AnchorPane.topAnchor="384.0" />
+      <Label layoutX="27.0" layoutY="423.0" text="Complaints:" AnchorPane.bottomAnchor="239.0" AnchorPane.leftAnchor="27.0" AnchorPane.rightAnchor="697.5" AnchorPane.topAnchor="423.0" />
+      <TextField fx:id="weightField" layoutX="203.0" layoutY="104.0" />
+      <TextField fx:id="heightField" layoutX="203.0" layoutY="149.0" AnchorPane.bottomAnchor="505.0" AnchorPane.leftAnchor="203.0" AnchorPane.rightAnchor="435.0" AnchorPane.topAnchor="149.0" />
+      <TextArea fx:id="complaintsField" layoutX="14.0" layoutY="455.0" prefHeight="200.0" prefWidth="358.0" AnchorPane.bottomAnchor="24.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="415.0" AnchorPane.topAnchor="455.0" />
+      <Label fx:id="bmiLabel" layoutX="246.0" layoutY="384.0" text="Results" AnchorPane.bottomAnchor="278.0" AnchorPane.leftAnchor="246.0" AnchorPane.rightAnchor="503.5" AnchorPane.topAnchor="384.0" />
+      <SplitMenuButton fx:id="bloodTypeMenu" layoutX="207.0" layoutY="341.0" mnemonicParsing="false" text="Select Blood Type" AnchorPane.bottomAnchor="313.0" AnchorPane.leftAnchor="207.0" AnchorPane.rightAnchor="445.5" AnchorPane.topAnchor="341.0">
+        <items>
+          <MenuItem mnemonicParsing="false" text="O" />
+            <MenuItem mnemonicParsing="false" text="O+" />
+            <MenuItem mnemonicParsing="false" text="O-" />
+          <MenuItem mnemonicParsing="false" text="A+" />
+            <MenuItem mnemonicParsing="false" text="A-" />
+        </items>
+      </SplitMenuButton>
+      <Button fx:id="saveButton" layoutX="655.0" layoutY="616.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="95.0" text="SAVE" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="655.0" AnchorPane.rightAnchor="37.0" AnchorPane.topAnchor="616.0">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Button>
+      <Button fx:id="signOutButton" layoutX="637.0" layoutY="37.0" mnemonicParsing="false" text="Sign Out" textFill="#f81212" AnchorPane.bottomAnchor="617.0" AnchorPane.leftAnchor="637.0" AnchorPane.rightAnchor="84.5" AnchorPane.topAnchor="37.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="197.0" layoutY="21.0" prefHeight="34.0" prefWidth="162.0" text="PATIENT VITALS" AnchorPane.bottomAnchor="624.0" AnchorPane.leftAnchor="197.0" AnchorPane.rightAnchor="428.0" AnchorPane.topAnchor="21.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="64.0" prefHeight="17.0" prefWidth="87.0" text="Select Patient" AnchorPane.bottomAnchor="598.0" AnchorPane.leftAnchor="37.0" AnchorPane.rightAnchor="663.0" AnchorPane.topAnchor="64.0" />
+      <TextField fx:id="searchField" layoutX="204.0" layoutY="60.0" AnchorPane.bottomAnchor="594.0" AnchorPane.leftAnchor="204.0" AnchorPane.rightAnchor="434.0" AnchorPane.topAnchor="60.0" />
+      <Label layoutX="32.0" layoutY="195.0" text="Blood Pressure" AnchorPane.bottomAnchor="467.0" AnchorPane.leftAnchor="32.0" AnchorPane.rightAnchor="676.0" AnchorPane.topAnchor="195.0" />
+      <TextField fx:id="bloodPressureField" layoutX="199.0" layoutY="191.0" AnchorPane.bottomAnchor="463.0" AnchorPane.leftAnchor="199.0" AnchorPane.rightAnchor="439.0" AnchorPane.topAnchor="191.0" />
+      <Label layoutX="32.0" layoutY="237.0" text="Heart rate" AnchorPane.bottomAnchor="425.0" AnchorPane.leftAnchor="32.0" AnchorPane.rightAnchor="692.5" AnchorPane.topAnchor="237.0" />
+      <TextField fx:id="heartRateField" layoutX="199.0" layoutY="233.0" AnchorPane.bottomAnchor="421.0" AnchorPane.leftAnchor="199.0" AnchorPane.rightAnchor="439.0" AnchorPane.topAnchor="233.0" />
+      <Label fx:id="heartRateField1" layoutX="27.0" layoutY="295.0" prefHeight="17.0" prefWidth="87.0" text="Temperatue" AnchorPane.bottomAnchor="367.0" AnchorPane.leftAnchor="27.0" AnchorPane.rightAnchor="697.5" AnchorPane.topAnchor="295.0" />
+      <TextField fx:id="temperatureField" layoutX="199.0" layoutY="291.0" AnchorPane.bottomAnchor="363.0" AnchorPane.leftAnchor="199.0" AnchorPane.rightAnchor="439.0" AnchorPane.topAnchor="291.0" />
+      <TableView fx:id="vitalsTable" layoutX="386.0" layoutY="85.0" prefHeight="519.0" prefWidth="389.0">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="32.5" text="ID" />
+          <TableColumn fx:id="patientNameColumn" prefWidth="60.5" text="Patient Name" />
+            <TableColumn fx:id="weightColumn" prefWidth="64.5" text="Weight" />
+            <TableColumn fx:id="heightColumn" prefWidth="54.0" text="Height" />
+            <TableColumn fx:id="bloodTypeColumn" prefWidth="49.0" text="Blood Type" />
+            <TableColumn fx:id="bloodPressureColumn" prefWidth="189.5" text="Blood Pressure" />
+            <TableColumn fx:id="heartRateColumn" prefWidth="75.0" text="Heart Rate" />
+            <TableColumn fx:id="temperatureColumn" prefWidth="75.0" text="Temperature" />
+            <TableColumn fx:id="bmiColumn" prefWidth="75.0" text="BMI" />
+            <TableColumn fx:id="complaintsColumn" prefWidth="75.0" text="Complaints" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
